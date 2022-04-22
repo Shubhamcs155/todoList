@@ -76,7 +76,7 @@ useEffect(() => {
             <figcaption style={{fontSize:"18px"}}>Add your todos here.</figcaption>
         
             <div className="addItems">
-                <input type="text" name=" Add your Item" value={inputData} id='inpItem' onChange={(e)=>{setInputData(e.target.value);}}/>
+                <input type="text" name=" Add your Item" value={inputData} id='inpItem' onChange={(e)=>{setInputData(e.target.value);}} autocomplete="false" />
                 {
                   dl ? <i className="far fa-edit add-btn" title="Edit Item" onClick={() => {updateItem();}}></i>:
                   <i className="fa fa-plus add-btn" title='Add Item' onClick={addItem}></i>               
